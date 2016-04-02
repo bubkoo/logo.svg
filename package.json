@@ -1,0 +1,30 @@
+{
+  "name": "logo.svg",
+  "version": "0.0.1",
+  "description": "Generate SVG logo programatically",
+  "bin": "./bin/logo.js",
+  "main": "index.js",
+  "author": "bubkoo",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bubkoo/logo.svg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bubkoo/logo.svg/issues"
+  },
+  "homepage": "https://github.com/bubkoo/logo.svg#readme",
+  "dependencies": {
+    "ansi.js": "0.0.5",
+    "js-yaml": "^3.5.5",
+    "loadrc": "^0.1.0",
+    "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "path-is-absolute": "^1.0.0",
+    "string-to-path": "file:../string-to-path",
+    "strip-json-comments": "^2.0.1"
+  }
+}
