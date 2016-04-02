@@ -3,8 +3,7 @@
 .editorconfig
 .gitignore
 .npmignore
-.travis.yml
+.logorc
 npm-debug.log
 
 /node_modules
-/test
