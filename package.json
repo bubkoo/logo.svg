@@ -1,7 +1,7 @@
 {
   "name": "logo.svg",
   "version": "0.0.1",
-  "description": "Generate SVG logo programatically",
+  "description": "Generate SVG logo",
   "bin": "./bin/logo.js",
   "main": "index.js",
   "author": "bubkoo",
