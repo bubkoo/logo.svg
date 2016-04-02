@@ -106,9 +106,7 @@ Example for `package.json`:
 {
   "name": "module",
   "version": "1.0.0",
-  .
-  .
-  .
+ 
   "logo": {
     "font": "Origami-Mommy-Pixellated.ttf",
     "fontSzie": 72,
@@ -117,12 +115,33 @@ Example for `package.json`:
       "fill": "#6ccb99"
     }
   },
-  .
-  .
-  .
+  
 }
 ```
 
 
 ## Embed the logo
+
+SVG does not work from READMEs by design for security concerns[...](http://stackoverflow.com/a/21521184/895245)
+
+> We have had to disable svg image rendering on GitHub.com due to potential cross site scripting vulnerabilities.
+
+So, we can not embad by the raw url, [rawgit.com](http://rawgit.com/) solves this problem nicely. For each request, it retrieves the appropriate document from GitHub and, crucially, serves it with the correct Content-Type header.
+
+Link to your logo.svg using the following pattern:
+
+```
+https://cdn.rawgit.com/<repo-owner>/<repo>/<branch>/path/to.svg
+```
+
+The embad code looks like:
+
+```mk
+![logo.svg](https://cdn.rawgit.com/<repo-owner>/<repo>/<branch>/path/to.svg)
+
+<img alt="logo.svg" width="500" src="https://cdn.rawgit.com/<repo-owner>/<repo>/<branch>/path/to.svg">
+```
+
+## Demos
+
 
