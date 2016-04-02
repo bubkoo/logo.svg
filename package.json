@@ -1,9 +1,17 @@
 {
   "name": "logo.svg",
   "version": "0.0.1",
-  "description": "Generate SVG logo",
+  "logo": {
+    "font": "Origami-Mommy-Pixellated.ttf",
+    "fontSzie": 72,
+    "output": "logo.svg",
+    "path": {
+      "fill": "#6ccb99"
+    }
+  },
+  "description": "Generate a svg logo, then you can embed it in you README.md",
   "bin": "./bin/logo.js",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "author": {
     "name": "bubkoo",
     "email": "bubkoo@163.com"
