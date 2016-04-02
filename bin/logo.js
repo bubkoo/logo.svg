@@ -31,12 +31,9 @@ var argv = parseArgs(process.argv.slice(2), {
   ],
   default: {
     overwrite: true,
-    kerning: true,
-    divided: false,
-    output: 'logo.svg'
+    kerning: true
   }
 });
-
 
 if (argv.help) {
   return actions.help(argv.help);

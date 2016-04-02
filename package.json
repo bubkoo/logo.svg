@@ -1,14 +1,6 @@
 {
   "name": "logo.svg",
   "version": "0.0.1",
-  "logo": {
-    "font": "Origami-Mommy-Pixellated.ttf",
-    "fontSzie": 72,
-    "output": "logo.svg",
-    "path": {
-      "fill": "#6ccb99"
-    }
-  },
   "description": "Generate a svg logo, then you can embed it in you README.md",
   "bin": "./bin/logo.js",
   "main": "./lib/index.js",
@@ -20,6 +12,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "logo",
+    "svg",
+    "generate",
+    "generator",
+    "cli",
+    "graphics",
+    "fonts"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bubkoo/logo.svg.git"
@@ -30,7 +31,7 @@
   "homepage": "https://github.com/bubkoo/logo.svg#readme",
   "dependencies": {
     "ansi.js": "0.0.5",
-    "loadrc": "^0.1.0",
+    "loadrc": "^0.1.2",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "path-is-absolute": "^1.0.0",

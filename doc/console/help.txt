@@ -10,7 +10,7 @@
   -f, --font ??? ............. Specify the font path or url.
   -s, --fontSize ??? ......... Specify the font size. Default `72`.
   -o, --output ??? ........... Specify the output path. Default `logo.svg`
-  -c, --config ??? ........... Specify the `.logorc` file.
+  -c, --config ??? ........... Specify the folder that contains `.logorc` file.
   -O, --overwrite ............ Overwrite when a logo file exist. Default `true`.
   -k, --kerning .............. Take kerning information into account. Default `true`.
   -d, --divided .............. Generate individual path for every char. Default `false`.
