@@ -1,22 +1,11 @@
-![logo.svg](https://cdn.rawgit.com/bubkoo/logo.svg/master/logo.svg)
 
-> Generate svg logo
+  Generate a svg logo, then you can embed it in you README.md
 
-## Install
+  Usage: logo [options]
 
-```
-$ npm install logo.svg -g
-```
 
-### CLI
+  Options:
 
-```
-$ logo [options]
-```
-
-### Options
-
-```
   -l, --logo ??? ............. The logo text. Default is the `name` of the `package.json`.
   -f, --font ??? ............. Specify the font path or url.
   -s, --fontSize ??? ......... Specify the font size. Default `72`.
@@ -28,11 +17,10 @@ $ logo [options]
   -V, --version .............. Print the current version.
   -h, --help ................. You're looking at it.
   -h, --help ??? ............. Show details for the specified command.
-```
 
-### Examples
 
-```
+  Examples:
+
   $ logo
   $ logo -Odo ./logo/logo.svg
   $ logo --config ./logo/.logorc
@@ -40,8 +28,5 @@ $ logo [options]
   $ logo --help font
   $ logo --help config
   $ logo --version
-```
 
-
-### As module
-
+  For more details see https://github.com/bubkoo/logo.svg
