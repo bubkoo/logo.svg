@@ -1,0 +1,9 @@
+
+  Specify the `.logorc` file.
+
+  Examples:
+
+  $ logo -c path/to/.logorc
+  $ logo --config path/to/.logo.yaml
+
+  For more details see https://github.com/bubkoo/logo.svg#logorc

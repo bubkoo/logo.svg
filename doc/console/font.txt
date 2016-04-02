@@ -1,0 +1,9 @@
+
+  Specify the font path or url.
+
+  Examples:
+
+  $ logo -f ../fonts/fontName.ttf
+  $ logo --font http://some-font.site/path-to-font
+
+  For more details see https://github.com/bubkoo/logo.svg#font
