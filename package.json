@@ -33,7 +33,7 @@
   "homepage": "https://github.com/bubkoo/logo.svg#readme",
   "dependencies": {
     "ansi.js": "0.0.5",
-    "loadrc": "^0.1.2",
+    "loadrc": "^0.1.4",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "path-is-absolute": "^1.0.0",
