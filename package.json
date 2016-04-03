@@ -1,6 +1,6 @@
 {
   "name": "logo.svg",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Generate a svg logo, then you can embed it in you README.md",
   "main": "./lib/index.js",
   "bin": {
