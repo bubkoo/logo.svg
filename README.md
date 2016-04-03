@@ -1,6 +1,18 @@
 ![logo.svg](https://cdn.rawgit.com/bubkoo/logo.svg/master/logo.svg)
 
-> Generate svg logo
+> Generate a svg logo, then you can embed it in you README.md
+
+[![MIT License](https://img.shields.io/badge/license-MIT_License-green.svg?style=flat-square)](https://github.com/bubkoo/logo.svg/blob/master/LICENSE)
+[![npm:](https://img.shields.io/npm/v/logo.svg.svg?style=flat-square)](https://www.npmjs.com/packages/logo.svg)
+
+
+**Feature:**
+
+- Custom font, font size, letter spacing
+- Generate individual path for every char
+- Support any valid attributes and style
+- Handily cli
+
 
 ## Install
 
@@ -68,13 +80,13 @@ The preset folder is `./fonts/`, you can contribute yours by [pull request](http
 
 The logo text. The `name` in `package.json` by default.
 
-### options for `string-to-path`
+### options for `text2svg`
 
-All the options of [string-to-path](https://github.com/bubkoo/string-to-path#options) are valid. 
+All the options of [text2svg](https://github.com/bubkoo/text2svg#options) are valid. 
 
 ## Styling the logo
 
-All the styling options of [string-to-path](https://github.com/bubkoo/string-to-path#styling-the-elements) are valid. 
+All the styling options of [text2svg](https://github.com/bubkoo/text2svg#styling-the-elements) are valid. 
 
 ## .logorc
 
@@ -122,11 +134,11 @@ Example for `package.json`:
 
 ## Embed the logo
 
-SVG does not work from READMEs by design for security concerns[...](http://stackoverflow.com/a/21521184/895245)
+SVG does not work from README by design for security concerns [...](http://stackoverflow.com/a/21521184/895245)
 
 > We have had to disable svg image rendering on GitHub.com due to potential cross site scripting vulnerabilities.
 
-So, we can not embad by the raw url, [rawgit.com](http://rawgit.com/) solves this problem nicely. For each request, it retrieves the appropriate document from GitHub and, crucially, serves it with the correct Content-Type header.
+So, we can not embed by the raw url, [rawgit.com](http://rawgit.com/) solves this problem nicely. For each request, it retrieves the appropriate document from GitHub and, crucially, serves it with the correct Content-Type header.
 
 Link to your logo.svg using the following pattern:
 
@@ -134,7 +146,7 @@ Link to your logo.svg using the following pattern:
 https://cdn.rawgit.com/<repo-owner>/<repo>/<branch>/path/to.svg
 ```
 
-The embad code looks like:
+The embed code looks like:
 
 ```mk
 ![logo.svg](https://cdn.rawgit.com/<repo-owner>/<repo>/<branch>/path/to.svg)
@@ -144,13 +156,18 @@ The embad code looks like:
 
 ## Demos
 
-<img alt="npm" width="500" src="https://cdn.rawgit.com/bubkoo/logo.svg/master/demos/Gubblebum-Blocky/npm.svg">
+<img alt="npm" width="450" src="https://cdn.rawgit.com/bubkoo/logo.svg/master/demos/gubblebum-blocky/npm.svg">
 
-![npm](https://cdn.rawgit.com/bubkoo/logo.svg/master/demos/Origami-Mommy/divided.svg)
+![npm](https://cdn.rawgit.com/bubkoo/logo.svg/master/demos/origami-mommy/divided.svg)
 
-![npm](https://cdn.rawgit.com/bubkoo/logo.svg/master/demos/Blocked/blocked.svg)
+![npm](https://cdn.rawgit.com/bubkoo/logo.svg/master/demos/blocked/blocked.svg)
 
-![npm](https://cdn.rawgit.com/bubkoo/logo.svg/master/demos/MK-Zodnig-Square/square.svg)
+![npm](https://cdn.rawgit.com/bubkoo/logo.svg/master/demos/mk-zodnig-square/square.svg)
+
+![npm](https://cdn.rawgit.com/bubkoo/logo.svg/master/demos/gubblebum/gubblebum.svg)
 
 
-
+## Related
+   
+- [text2svg](https://github.com/bubkoo/text2svg) Convert text to svg path.
+- [loadrc](https://github.com/bubkoo/loadrc) Load runtime configuration files for your module.
