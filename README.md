@@ -146,6 +146,12 @@ Link to your logo.svg using the following pattern:
 https://cdn.rawgit.com/<repo-owner>/<repo>/<branch>/path/to.svg
 ```
 
+To ensure that the CDN always serves the version of the file you want, use a git tag or commit hash in the file's path instead of a branch name, and update the URL if you push a new version of the file.
+
+So, instead of a URL like `https://cdn.rawgit.com/user/repo/branch/file`, use a URL like `https://cdn.rawgit.com/user/repo/tag/file` or `https://cdn.rawgit.com/user/repo/commit/file`.
+
+
+
 The embed code looks like:
 
 ```mk
