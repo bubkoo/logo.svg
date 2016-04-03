@@ -156,15 +156,15 @@ The embed code looks like:
 
 ## Demos
 
-<img alt="npm" width="450" src="https://cdn.rawgit.com/bubkoo/logo.svg/master/demos/gubblebum-blocky/npm.svg">
+<img alt="npm" width="450" src="https://cdn.rawgit.com/bubkoo/logo.svg/3321802/demos/gubblebum-blocky/npm.svg">
 
-![npm](https://cdn.rawgit.com/bubkoo/logo.svg/master/demos/origami-mommy/divided.svg)
+![divided](https://cdn.rawgit.com/bubkoo/logo.svg/3321802/demos/origami-mommy/divided.svg)
 
-![npm](https://cdn.rawgit.com/bubkoo/logo.svg/master/demos/blocked/blocked.svg)
+![blocked](https://cdn.rawgit.com/bubkoo/logo.svg/3321802/demos/blocked/blocked.svg)
 
-![npm](https://cdn.rawgit.com/bubkoo/logo.svg/master/demos/mk-zodnig-square/square.svg)
+![square](https://cdn.rawgit.com/bubkoo/logo.svg/3321802/demos/mk-zodnig-square/square.svg)
 
-![npm](https://cdn.rawgit.com/bubkoo/logo.svg/master/demos/gubblebum/gubblebum.svg)
+![gubblebum](https://cdn.rawgit.com/bubkoo/logo.svg/3321802/demos/gubblebum/gubblebum.svg)
 
 
 ## Related
