@@ -1,6 +1,7 @@
-logo: 'divided'
-font: 'origami-mommy.ttf'
-output: './demos/origami-mommy/divided.svg'
+logo: 'NATSORT '
+font: 'gubblebum.ttf'
+output: './demos/gubblebum/gubblebum.svg'
+spacing: 5
 divided: true
 path:
   fill: '#6af72e'
@@ -16,3 +17,5 @@ path5:
   fill: '#3cc8f6'
 path6:
   fill: '#ff3e74'
+path:
+  fill: '#6ccb99'

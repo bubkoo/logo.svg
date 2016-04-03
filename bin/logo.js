@@ -2,6 +2,11 @@
 
 var parseArgs = require('minimist');
 var actions   = require('../lib/actions');
+var updater   = require('update-notifier');
+var pkg       = require('../package.json');
+
+
+updater({ pkg: pkg }).notify();
 
 
 var argv = parseArgs(process.argv.slice(2), {
