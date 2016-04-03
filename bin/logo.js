@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
+var cursor    = require('ansi.js')(process.stdout);
+var updater   = require('update-notifier');
 var parseArgs = require('minimist');
 var actions   = require('../lib/actions');
-var updater   = require('update-notifier');
 var pkg       = require('../package.json');
 
 
@@ -37,6 +38,16 @@ var argv = parseArgs(process.argv.slice(2), {
   default: {
     overwrite: true,
     kerning: true
+  },
+  unknown: function (option) {
+
+    cursor
+      .yellow()
+      .write('Unknown option: ' + option)
+      .write('\n')
+      .fg.reset();
+
+    return false;
   }
 });
 
