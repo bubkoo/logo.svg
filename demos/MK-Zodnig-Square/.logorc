@@ -3,3 +3,4 @@ font: 'MK-Zodnig-Square.ttf'
 output: './demos/MK-Zodnig-Square/square.svg'
 path:
   fill: '#cfa3fd'
+  stroke: '#fd742d'
