@@ -1,4 +1,4 @@
-![logo.svg](https://cdn.rawgit.com/bubkoo/logo.svg/master/logo.svg)
+![logo.svg](https://cdn.rawgit.com/bubkoo/logo.svg/d05cbb1/logo.svg)
 
 > Generate a svg logo, then you can embed it in you README.md
 
