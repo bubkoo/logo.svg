@@ -1,9 +1,11 @@
 {
   "name": "logo.svg",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "Generate a svg logo, then you can embed it in you README.md",
-  "bin": "./bin/logo.js",
   "main": "./lib/index.js",
+  "bin": {
+    "logo": "./bin/logo.js"
+  },
   "author": {
     "name": "bubkoo",
     "email": "bubkoo@163.com"
@@ -35,7 +37,7 @@
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "path-is-absolute": "^1.0.0",
-    "string-to-path": "0.0.2",
+    "text2svg": "0.0.1",
     "update-notifier": "^0.6.3"
   }
 }
