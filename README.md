@@ -144,4 +144,13 @@ The embad code looks like:
 
 ## Demos
 
+<img alt="npm" width="500" src="https://cdn.rawgit.com/bubkoo/logo.svg/master/demos/Gubblebum-Blocky/npm.svg">
+
+![npm](https://cdn.rawgit.com/bubkoo/logo.svg/master/demos/Origami-Mommy/divided.svg)
+
+![npm](https://cdn.rawgit.com/bubkoo/logo.svg/master/demos/Blocked/blocked.svg)
+
+![npm](https://cdn.rawgit.com/bubkoo/logo.svg/master/demos/MK-Zodnig-Square/square.svg)
+
+
 

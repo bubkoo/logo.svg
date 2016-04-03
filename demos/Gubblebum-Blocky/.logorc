@@ -1,5 +1,5 @@
 font: 'Gubblebum-Blocky.ttf'
 logo: 'npm '
-output: './demos/Gubblebum-Blocky/logo.svg'
+output: './demos/Gubblebum-Blocky/npm.svg'
 path:
   fill: '#cb3837'

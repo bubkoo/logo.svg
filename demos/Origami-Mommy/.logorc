@@ -1,0 +1,18 @@
+logo: 'divided'
+font: 'Origami-Mommy.ttf'
+output: './demos/Origami-Mommy/divided.svg'
+divided: true
+path:
+  fill: '#6af72e'
+path1:
+  fill: '#c6e03c'
+path2:
+  fill: '#fc428f'
+path3:
+  fill: '#cea2fd'
+path4:
+  fill: '#fb3f24'
+path5:
+  fill: '#3cc8f6'
+path6:
+  fill: '#ff3e74'

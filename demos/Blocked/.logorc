@@ -1,0 +1,5 @@
+logo: 'Blocked'
+font: 'Blocked.ttf'
+output: './demos/Blocked/blocked.svg'
+path:
+  fill: '#fc174f'
