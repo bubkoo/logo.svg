@@ -13,8 +13,9 @@
   "license": "MIT",
   "scripts": {
     "lint": "jshint ./lib/*.js ./bin/*.js",
-    "pretest":"npm run lint",
-    "test": "echo \"Error: no test specified\""
+    "pretest": "npm run lint",
+    "test": "echo \"Error: no test specified\"",
+    "prepublish": "npm test"
   },
   "keywords": [
     "logo",
