@@ -3,7 +3,9 @@
 > Generate a svg logo, then you can embed it in you README.md
 
 [![MIT License](https://img.shields.io/badge/license-MIT_License-green.svg?style=flat-square)](https://github.com/bubkoo/logo.svg/blob/master/LICENSE)
+
 [![npm:](https://img.shields.io/npm/v/logo.svg.svg?style=flat-square)](https://www.npmjs.com/packages/logo.svg)
+[![build:?](https://img.shields.io/travis/bubkoo/logo.svg/master.svg?style=flat-square)](https://travis-ci.org/bubkoo/logo.svg)
 
 
 **Feature:**
@@ -74,19 +76,104 @@ If the path is relative, it is relative to the current work directory(`process.c
 
 If the path is a basename, such as `fontName.ttf`, we will fisrtly try to load it as a relative path, if that failed we will search it from the **preset** folder, and then search it from system and user fonts folders.
 
-The preset folder is `./fonts/`, you can contribute yours by [pull request](https://github.com/bubkoo/logo.svg/pulls).
+The preset folder is `./fonts/`, contribute your fonts by [pull request](https://github.com/bubkoo/logo.svg/pulls).
 
 ### logo
 
-The logo text. The `name` in `package.json` by default.
+The logo text. Default is the `name` in `package.json`.
 
-### options for `text2svg`
+### x
 
-All the options of [text2svg](https://github.com/bubkoo/text2svg#options) are valid. 
+Horizontal position of the beginning of the text. (default: `0`)
+
+### y
+
+Vertical position of the baseline of the text. (default: `0`)
+
+### fontSize
+
+Size of the text. (default: `72`)
+
+### spacing
+
+The letter spacing. (default: `0`)
+
+### kerning
+
+If `true` takes kerning information into account. (default: `true`)
+
+### divided
+
+If `true` generates individual path for every char. (default: `false`)
+
+### grouped
+
+If `true` groups the individual `<path>` with `<g></g>` element. (default: `false`)
+
+### title
+
+If specified will generate a `<title>` at the root of `<svg>`. (default: `logo`)
+
+### desc
+
+If specified will generate a `<desc>` at the root of `<svg>`. (default: `null`)
+
 
 ## Styling the logo
 
-All the styling options of [text2svg](https://github.com/bubkoo/text2svg#styling-the-elements) are valid. 
+Specify the padding of the `<path>` relative to the `<svg>`:
+
+- options.padding
+- options.paddingTop or options['padding-top']
+- options.paddingRight or options['padding-right']
+- options.paddingBottom or options['padding-bottom']
+- options.paddingLeft or options['padding-left']
+
+The `<svg>`, `<path>` and `<g>` elements can be styled by any valid attributes. 
+
+The generated `<svg>` has the following default attributes:
+
+```js
+{
+	'version'    : '1.1',
+    'xmlns'      : 'http://www.w3.org/2000/svg',
+    'xmlns:xlink': 'http://www.w3.org/1999/xlink',
+    'role'   : 'img',
+    'width'  : width,
+    'height' : height,
+    'viewbox': [x, y, width, height].join(' ')
+}
+```
+
+We can **add**/**update**/**remove** by `options.svg`:
+
+```js
+options.svg = {
+	'version': '',     // remove this attribute
+    'role'   : 'logo', // update this attribute
+    'fill'   : 'red'   // add some custiom styles
+}
+```
+
+**Note** that the `width`, `height` and `viewbox` can't be specified.
+
+Styling the `<path>` by `options.path`. If `divided` is `true` we can style the individual `<path>` element by `options.path?`, which `?` is the index of each char in the `logo`:
+
+```js
+// style for every path(s)
+options.path  = {
+    'fill': yellow
+};
+
+// style the first char
+options.path0 = {
+    'fill': '#FF0000',
+    'stroke': '#000000'
+};
+```
+
+As the same `options.g` specified the style of `<g>` element. 
+
 
 ## .logorc
 
@@ -151,7 +238,6 @@ To ensure that the CDN always serves the version of the file you want, use a git
 So, instead of a URL like `https://cdn.rawgit.com/user/repo/branch/file`, use a URL like `https://cdn.rawgit.com/user/repo/tag/file` or `https://cdn.rawgit.com/user/repo/commit/file`.
 
 
-
 The embed code looks like:
 
 ```mk
@@ -177,3 +263,9 @@ The embed code looks like:
    
 - [text2svg](https://github.com/bubkoo/text2svg) Convert text to svg path.
 - [loadrc](https://github.com/bubkoo/loadrc) Load runtime configuration files for your module.
+
+
+## TODO
+
+- Support logo template.
+- What's your suggestion? Open an [issue](https://github.com/bubkoo/logo.svg/issues).
