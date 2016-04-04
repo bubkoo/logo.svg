@@ -2,10 +2,12 @@
 .DS_Store
 .editorconfig
 .gitignore
+.jshintrc
 .npmignore
+.logorc
+.travis.yml
 npm-debug.log
-/.logorc
-/logo.svg
 
+/logo.svg
 /node_modules
 /demos
