@@ -1,12 +1,11 @@
 #!/usr/bin/env node
 
-var updater   = require('update-notifier');
+'use strict';
+
+require('../lib/update');
+
 var parseArgs = require('minimist');
 var actions   = require('../lib/actions');
-var pkg       = require('../package.json');
-
-
-updater({ pkg: pkg }).notify();
 
 
 var argv = parseArgs(process.argv.slice(2), {
