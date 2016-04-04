@@ -1,6 +1,6 @@
 {
   "name": "logo.svg",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Generate a svg logo, then you can embed it in you README.md",
   "main": "./lib/index.js",
   "bin": {
@@ -12,7 +12,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "jshint ./lib/*.js ./bin/*.js",
+    "pretest":"npm run lint",
+    "test": "echo \"Error: no test specified\""
   },
   "keywords": [
     "logo",
