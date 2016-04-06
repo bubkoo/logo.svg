@@ -18,9 +18,20 @@
 
 ## Install
 
+To use the `logo` command, install it globally:
+
 ```
 $ npm install logo.svg -g
 ```
+
+To use the JavaScript API, install `logo.svg` locally:
+
+```
+$ npm install logo.svg --save
+```
+
+If you need both the `logo` command and the JavaScript API, install `logo.svg`.js both ways.
+
 
 ## Usage
 
@@ -58,7 +69,7 @@ $ logo [options]
   $ logo --version
 ```
 
-### As a module
+### JavaScript API
 
 ```js
 var logo = require('logo.svg');
