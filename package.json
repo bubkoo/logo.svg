@@ -1,6 +1,6 @@
 {
   "name": "logo.svg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate a svg logo, then you can embed it in you README.md",
   "main": "./lib/index.js",
   "bin": {
@@ -8,7 +8,7 @@
   },
   "author": {
     "name": "bubkoo",
-    "email": "bubkoo@163.com"
+    "email": "bubkoo.w@gmail.com"
   },
   "license": "MIT",
   "scripts": {
@@ -38,11 +38,11 @@
   "homepage": "https://github.com/bubkoo/logo.svg#readme",
   "dependencies": {
     "ansi.js": "0.0.5",
-    "loadrc": "^0.1.4",
+    "loadrc": "^1.0.0",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "path-is-absolute": "^1.0.0",
-    "text2svg": "0.0.1",
+    "text2svg": "^1.0.0",
     "update-notifier": "^0.6.3"
   },
   "devDependencies": {
