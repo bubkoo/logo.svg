@@ -259,13 +259,72 @@ The embed code looks like:
 
 ## Demos
 
+```yaml
+font: 'gubblebum-glocky.ttf'
+logo: 'npm '
+output: './demos/gubblebum-blocky/npm.svg'
+path:
+  fill: '#cb3837'
+```
+
 <img alt="npm" width="450" src="https://cdn.rawgit.com/bubkoo/logo.svg/3321802/demos/gubblebum-blocky/npm.svg">
+
+```yaml
+logo: 'divided'
+font: 'origami-mommy.ttf'
+output: './demos/origami-mommy/divided.svg'
+divided: true
+path:
+  fill: '#6af72e'
+path1:
+  fill: '#c6e03c'
+path2:
+  fill: '#fc428f'
+path3:
+  fill: '#cea2fd'
+path4:
+  fill: '#fb3f24'
+path5:
+  fill: '#3cc8f6'
+path6:
+  fill: '#ff3e74'
+```
 
 ![divided](https://cdn.rawgit.com/bubkoo/logo.svg/3321802/demos/origami-mommy/divided.svg)
 
+```yaml
+logo: 'Blocked'
+font: 'blocked.ttf'
+output: './demos/blocked/blocked.svg'
+path:
+  fill: '#fc174f'
+```
+
 ![blocked](https://cdn.rawgit.com/bubkoo/logo.svg/3321802/demos/blocked/blocked.svg)
 
+```yaml
+logo: 'Square'
+font: 'mk-zodnig-square.ttf'
+fontSize: 96
+output: './demos/mk-zodnig-square/square.svg'
+path:
+  fill: '#fd742d'
+#  stroke: '#fd742d'
+```
+
 ![square](https://cdn.rawgit.com/bubkoo/logo.svg/3321802/demos/mk-zodnig-square/square.svg)
+
+```yaml
+logo: 'Gubblebum '
+font: 'gubblebum.ttf'
+output: './demos/gubblebum/gubblebum.svg'
+spacing: 10
+divided: true
+path:
+  fill: '#6af72e'
+path0:
+  fill: '#fc428f'
+```
 
 ![gubblebum](https://cdn.rawgit.com/bubkoo/logo.svg/3321802/demos/gubblebum/gubblebum.svg)
 
@@ -279,4 +338,11 @@ The embed code looks like:
 ## TODO
 
 - Support logo template.
-- What's your suggestion? Open an [issue](https://github.com/bubkoo/logo.svg/issues).
+- What's your suggestion? Open an [issue](https://github.com/bubkoo/logo.svg/issues/new).
+
+
+# Contributing
+
+Pull requests and stars are highly welcome.
+
+For bugs and feature requests, please [create an issue](https://github.com/bubkoo/logo.svg/issues/new).
