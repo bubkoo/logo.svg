@@ -341,7 +341,7 @@ path0:
 - What's your suggestion? Open an [issue](https://github.com/bubkoo/logo.svg/issues/new).
 
 
-# Contributing
+## Contributing
 
 Pull requests and stars are highly welcome.
 
